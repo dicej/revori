@@ -1,7 +1,7 @@
 Revori - a revision-oriented DBMS
 =================================
 
-[![Build Status](https://travis-ci.org/ReadyTalk/revori.png?branch=master)](https://travis-ci.org/ReadyTalk/revori)
+[![Build Status](https://travis-ci.org/dicej/revori.png?branch=master)](https://travis-ci.org/dicej/revori)
 
 Revori is a database management system designed to handle
 rapidly-changing data efficiently.  In addition to traditional
