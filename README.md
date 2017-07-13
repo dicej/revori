@@ -25,8 +25,9 @@ some stuff doesn't, and the API is not yet thoroughly documented and
 may change without warning.  If you're brave and want to start playing
 with it anyway, you can build and browse the
 [API](https://jitpack.io/com/github/dicej/revori/master-bc94402ca5-1/javadoc/index.html?com/readytalk/revori/Revision.html)
-and consult the test/unittests directory for simple examples of how to
-use it.
+and consult the [test
+directory](https://github.com/dicej/revori/tree/master/server/src/test/java/com/readytalk/revori)
+for simple examples of how to use it.
 
 Package
 -------
