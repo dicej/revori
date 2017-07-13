@@ -1,16 +1,15 @@
 apply plugin: 'cpp'
 
-binaries.all {
-  if (toolChain in Gcc) {
-    cppCompiler.args "-Werror", "-Wall", "-Wextra", "-Wunused-parameter",
-      "-Winit-self", "-fno-rtti", "-fno-exceptions", "-O0", "-g3"
-    linker.args "-lreadline"
+model {
+  components {
+    main(NativeExecutableSpec)
   }
-}
-
-executables {
-  main {
-    baseName = 'revori-client'
+  binaries {
+    all {
+      cppCompiler.args "-Werror", "-Wall", "-Wextra", "-Wunused-parameter",
+        "-Winit-self", "-fno-rtti", "-fno-exceptions", "-O0", "-g3"
+      linker.args "-lreadline"
+    }
   }
 }
 
