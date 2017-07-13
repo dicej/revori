@@ -23,9 +23,30 @@ Status
 The code is currently in an alpha state, meaning some stuff works,
 some stuff doesn't, and the API is not yet thoroughly documented and
 may change without warning.  If you're brave and want to start playing
-with it anyway, you can build and browse the JavaDoc (run `./gradlew
-javadoc`) and consult the test/unittests directory for simple examples
-of how to use it.
+with it anyway, you can build and browse the
+[API](https://jitpack.io/com/github/dicej/revori/master-bc94402ca5-1/javadoc/index.html?com/readytalk/revori/Revision.html)
+and consult the test/unittests directory for simple examples of how to
+use it.
+
+Package
+-------
+
+To add Revori as a dependency to your Gradle project, add the
+following to your build.gradle:
+
+```
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile 'com.github.dicej:revori:master-SNAPSHOT'
+}
+```
+
+See [here](https://jitpack.io/docs/#building-with-jitpack) for help
+with other build systems.
 
 Build
 -----
@@ -33,7 +54,7 @@ Build
 #### Client
 
 You'll need to have the libreadline headers and library installed to
-build the client
+build the client, which is a C++ command line executable.
 
 	$ ./gradlew client:build
 
