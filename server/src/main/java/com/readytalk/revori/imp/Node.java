@@ -15,7 +15,7 @@ import javax.annotation.Nullable;
 
 import com.google.common.collect.Lists;
 
-class Node {
+public class Node {
   private static final boolean Debug = false;
 
   public static final Node Null = new Node(new Object(), null);
